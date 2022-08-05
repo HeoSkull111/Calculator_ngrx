@@ -1,0 +1,42 @@
+<div class="page">
+
+  <div class="calculator">
+    <div class="display">
+      <span class="previous"></span>
+      <span  class="current">{{currentNumber$ | async}}</span>
+    </div>
+    <div class="inputs">
+      <div class="row">
+        <button (click)="enterOperator('+/-')" class="input">+/-</button>
+        <button (click)="enterOperator('%')" class="input">%</button>
+        <button (click)="enterOperator('DEL')" class="input">DEL</button>
+      </div>
+      <div class="row">
+        <button (click)="enterNumber('7')" class="input">7</button>
+        <button (click)="enterNumber('8')" class="input">8</button>
+        <button (click)="enterNumber('9')" class="input">9</button>
+        <button (click)="enterOperator('+')" class="input">÷</button>
+      </div>
+      <div class="row">
+        <button (click)="enterNumber('4')" class="input">4</button>
+        <button (click)="enterNumber('5')" class="input">5</button>
+        <button (click)="enterNumber('6')" class="input">6</button>
+        <button (click)="enterOperator('*')" class="input">×</button>
+      </div>
+      <div class="row">
+        <button (click)="enterNumber('1')" class="input">1</button>
+        <button (click)="enterNumber('2')" class="input">2</button>
+        <button (click)="enterNumber('3')" class="input">3</button>
+        <button (click)="enterOperator('-')" class="input">-</button>
+      </div>
+      <div class="row">
+        <button (click)="enterOperator('C')" class="c  input">CLR</button>
+        <button (click)="enterNumber('0')" class="input">0</button>
+        <button (click)="enterOperator('.')" class="input">.</button>
+        <button (click)="enterOperator('+')" class="input">+</button>
+      </div>
+    </div>
+    <button (click)="enterOperator('=')" class="equals">=</button>
+  </div>'
+
+</div>
